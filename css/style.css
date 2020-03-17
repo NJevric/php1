@@ -1,0 +1,25 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+header{
+    height: 100vh;
+}
+.profilna{
+    background:url(../img/register1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+.profilna h2{
+    color:#fff;
+    font-size:4em;
+    margin-top:45%;
+}
+
+@media screen and (max-width: 992px) {
+    .profilna{
+        height: 50vh; 
+    }
+  }
