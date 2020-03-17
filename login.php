@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8"/>
         <title>Photos for everyone / Register</title>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -14,24 +15,24 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 profilna my-auto">
-                    <h2 class="text-center">Creation starts here</h2>
+                    <h2 class="text-center mb-5">Creation starts here</h2>
                 </div>
                 <div class="col-lg-6 my-auto">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <h1 class="text-center mb-4 text-uppercase">Login</h1>
-                            <p class="text-center mb-5">Welcome back</p>
+                            <p class="text-center mb-3 mb-md-5">Welcome back</p>
                             <form action="phpFunctionality/loginCheck.php" method="POST" onSubmit="return provera();">
                                 <div class="form-group row">
-                                    <div class="col-lg-12 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-12 col-10 mb-0 mb-md-0 mx-auto">
                                         <input type="text" class="form-control" name="usernameLog" id="usernameLog" placeholder="Username"/>
                                          <p class="greskaKontakt"></p>
                                     </div>
-                                    <div class="col-lg-12 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-12 col-10 mb-3 mb-md-0 mx-auto">
                                         <input type="password" class="form-control" name="passLog" id="passLog" placeholder="Password"/>
                                         <p class="greskaKontakt"></p>
                                     </div>
-                                    <div class="col-lg-12 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-12 col-10 mb-3 mb-md-0 mx-auto">
                                         <input type="submit" class="btn-primary form-control" name="btnLogin" value="Login"/>
                                         <p class="text-center mt-4">Don't have an account? <a href="join.php">Join</a></p>
                                     </div>

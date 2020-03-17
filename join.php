@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8"/>
         <title>Photos for everyone / Register</title>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -13,41 +14,42 @@
     <header>  
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 profilna my-auto">
-                    <h2 class="text-center">Creation starts here</h2>
+                <div class="col-xl-6 col-md-12 profilna my-auto">
+                    <h2 class="text-center mb-3">Creation starts here</h2>
+                   
                 </div>
-                <div class="col-lg-6 my-auto">
+                <div class="col-xl-6 col-md-12 my-auto zaVeceEkrane">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <h1 class="text-center mb-4 text-uppercase">Join our team</h1>
-                            <p class="text-center mb-5">Already have an account? <a href="login.php">Login</a></p>
+                            <p class="text-center mb-3 mb-md-5">Already have an account? <a href="login.php">Login</a></p>
                             <form action="phpFunctionality/register.php" method="POST" onSubmit="return provera();" id="kontaktForma">
                                 <div class="form-group row">
-                                    <div class="col-lg-6 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-6 col-10 mb-0 mx-auto">
                                         <input type="text" class="form-control" id="ime"  name="ime" placeholder="Name">
                                         <p class="greskaKontakt"></p>
                                     </div>
-                                    <div class="col-lg-6 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-6 col-10 mb-0  mx-auto">
                                         <input type="text" class="form-control" name="prezime" id="prezime" placeholder="Last Name"/>
                                         <p class="greskaKontakt"></p>
                                     </div>
-                                    <div class="col-lg-12 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-12 col-10 mb-0  mx-auto">
                                         <input type="text" class="form-control" name="email" id="email" placeholder="Email"/>
                                         <p class="greskaKontakt"></p>
                                     </div>
-                                    <div class="col-lg-12 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-12 col-10 mb-0  mx-auto">
                                         <input type="text" class="form-control" name="username" id="username" placeholder="Username"/>
                                         <p class="greskaKontakt"></p>
                                     </div>
-                                    <div class="col-lg-6 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-6 col-10 mb-0  mx-auto">
                                         <input type="password" class="form-control" name="lozinka" id="lozinka" placeholder="Password"/>
                                         <p class="greskaKontakt"></p>
                                     </div>
-                                    <div class="col-lg-6 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-6 col-10 mb-0  mx-auto">
                                         <input type="password" class="form-control" name="lozinkaPotvrdi" id="lozinkaPotvrdi" placeholder="Confirm Password"/>
                                         <p class="greskaKontakt"></p>
                                     </div>
-                                    <div class="col-lg-12 col-sm-12 mb-3 mb-md-0">
+                                    <div class="col-lg-12 col-10 mb-0  mx-auto">
                                         <input type="submit" class="btn-primary form-control" name="btnRegistruj" value="Register"/>
                                     </div>
                                     <?php 

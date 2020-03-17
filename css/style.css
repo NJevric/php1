@@ -17,9 +17,33 @@ header{
     font-size:4em;
     margin-top:45%;
 }
-
-@media screen and (max-width: 992px) {
-    .profilna{
-        height: 50vh; 
+.zaManjeEkrane{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .zaManjeEkrane{
+        display: block;
+        color:#fff;
     }
+    /* .zaVeceEkrane{
+        display: none;
+    } */
+}
+  @media screen and (max-width: 400px) {
+      header{
+        background:url(../img/register1.jpg);
+    }
+    .profilna{
+        height: inherit;
+        background:none;
+    }
+    .naslov{
+          font-size:2em;
+      }
+    .profilna h2{
+        color:#fff;
+        font-size:2.2em;
+        margin-top:15%;
+    }
+    
   }
