@@ -15,11 +15,17 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 profilna my-auto">
-                    <h2 class="text-center mb-5">Creation starts here</h2>
+                    <h2 class="text-center mb-5 text-uppercase">Creation starts here</h2>
                 </div>
                 <div class="col-lg-6 my-auto">
                     <div class="row">
-                        <div class="col-lg-10 mx-auto">
+                        <div class="col-lg-8 mx-auto">
+                            <?php 
+                                if(isset($_SESSION['uspeh'])){
+                                    echo "<p class='text-center mb-5'>" . $_SESSION['uspeh'] . "</p>";
+                                    unset($_SESSION['uspeh']);
+                                }
+                            ?>
                             <h1 class="text-center mb-4 text-uppercase">Login</h1>
                             <p class="text-center mb-3 mb-md-5">Welcome back</p>
                             <form action="phpFunctionality/loginCheck.php" method="POST" onSubmit="return provera();">

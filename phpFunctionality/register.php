@@ -55,8 +55,8 @@
      
         try{
            $priprema->execute(); 
-          
-           header("Location: ../index.php");
+            $_SESSION['uspeh']="Uspesna registracija, ulogujte se da bi ste pristupili sajtu";
+           header("Location: ../login.php");
         }catch(PDOException $e){
             // if($username=:user){
             //     $_SESSION["greske"]=["Vec postoji korisnik sa tim username-om!"];

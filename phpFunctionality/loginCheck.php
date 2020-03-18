@@ -22,7 +22,7 @@
 
             require("konekcija.php");
 
-            $priprema = $konekcija->prepare("SELECT u.idUser, u.email, ul.imeUloge from users u inner join uloga ul on u.idUloga=ul.idUloga where username=:username and password=:pass");
+            $priprema = $konekcija->prepare("SELECT u.idUser, u.email, ul.imeUloge AS ulogaIme from users u inner join uloga ul on u.idUloga=ul.idUloga where username=:username and password=:pass");
 
             $priprema->bindParam(":username",$username);
             $pass = md5($lozinka);
@@ -31,9 +31,21 @@
 
             if($priprema->rowCount()==1){
                 $korisnik=$priprema->fetch();
-                $_SESSION["korisnik"]=$korisnik;
-                header("Location: ../index.php");
+                $admin=$priprema->fetch();
+                $autor=$priprema->fetch();
 
+                if($korisnik['ulogaIme']=="Korisnik"){
+                    $_SESSION['korisnik']=$korisnik;
+                }
+                if($korisnik['ulogaIme']=="Admin"){
+                    $_SESSION['admin']=$admin;
+                   
+                }
+                if($korisnik['ulogaIme']=="Autor"){
+                    $_SESSION['autor']=$autor;
+                    
+                }
+                header("Location: ../index.php");
             }else{
                 $_SESSION["greskeLog"]=["Ne postoji takav korisnik"];
                 header("location: ../login.php");

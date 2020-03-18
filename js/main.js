@@ -1,4 +1,16 @@
-
+var url=location.href;
+var urlBezIndex=location.pathname;
+window.onload=function(){
+    navigacija();
+}
+function navigacija(){
+    $("#hamburger").click(function(){
+        $("#navigacijaLinkovi").slideToggle();
+       
+       $(".ham").toggleClass("hamClick");
+    });
+    console.log("navigacija");
+}
 function provera(){
     let ime=document.getElementById("ime").value;
     let prezime=document.getElementById("prezime").value;

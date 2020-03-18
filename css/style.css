@@ -2,6 +2,9 @@
     padding:0px;
     margin:0px;
 }
+.container{
+    max-width: 1300px!important;
+}
 header{
     height: 100vh;
 }
@@ -14,11 +17,159 @@ header{
 }
 .profilna h2{
     color:#fff;
-    font-size:4em;
+    font-size:3.5em;
     margin-top:45%;
 }
 .zaManjeEkrane{
     display: none;
+}
+/* navigacija */
+.logo img{
+    width:50px;
+}
+#navigacija ul li{
+    list-style: none;
+    font-size:18px;
+    font-weight: 500;
+    display:inline;
+    /* transition: 0.3s ease-in; */
+    padding:5px 10px;
+    transition:.2s ease-in;
+    
+}
+#navigacija ul li:hover{
+    padding: 3px 10px;
+    
+    /* border:2px solid goldenrod; */
+    border-bottom:2px solid goldenrod;
+    
+}
+#navigacijaLinkovi{
+    position:absolute;
+    right:100px;
+    top:20px;
+    /* text-align:left; */
+    display:none;
+    
+}
+#navigacijaLinkovi a{
+    color:#fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    /* padding:5px 10px; */
+    /* border-bottom:1px solid #fff; */
+}
+.active{
+    display:block!important;
+    position: absolute;
+    top:100px;
+    right:0px;
+    z-index: 100;
+}
+
+#hamburger{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+.ham{
+    width: 35px;
+    height: 3px;
+    background-color:#CFB53B;
+    transform:rotate(0deg);
+    transition: 0.3s ease;
+}
+.ham:nth-of-type(1){
+    width:40px;
+}
+.ham:nth-of-type(2){
+   margin:5px 0px;
+    margin-left:5px;
+}
+.ham:nth-of-type(3){
+    width:40px;
+    /* margin-left:10px; */
+}
+.hamClick{
+    background:#CFB53B;
+}
+
+.hamClick:nth-of-type(1){
+    transform: rotate(-45deg);
+  }
+.hamClick:nth-of-type(2){
+    transform:rotate(45deg);
+ }
+ .hamClick:nth-of-type(3){
+    opacity: 0;
+  }
+
+/* end of nav */
+
+.naslov{
+    margin-top:100px;
+    color:#fff;
+}
+#glavni{
+    background:url(../img/fotograf1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-position: center;
+}
+#glavniProfili{
+    height: inherit;
+    
+}
+.navigacijaProfil a{
+    color:#000!important;
+}
+.hamProfil{
+    background-color:#000!important;
+}
+footer{
+    background:rgba(0,0,0,0.85);
+    color:#fff;
+    /* min-height: 200px; */
+    padding-top:5px;
+}
+.autorSlike{
+    border-radius: 50%;
+    width:35px;
+    position: absolute;
+    bottom:30px;
+    left:20px;
+    transition:0.1s ease-in;
+}
+/* .autorSlike:hover{
+   transform: scale(1.1);
+} */
+
+.download{
+    
+    color:rgba(255,255,255,1);
+    font-size:1.4em;
+    position: absolute;
+    bottom:30px;
+    right: 30px;
+}
+
+.post{
+    position: relative;
+
+}
+/* PROFIL STRANICA */
+#profilMain{
+    min-height: 850px;
+}
+.profilnaAutor{
+    width: 200px;
+}
+.opis{
+    width: 300px;
+}
+.profil{
+    margin-bottom: 100px;
 }
 @media screen and (max-width: 1024px) {
     .zaManjeEkrane{

@@ -15,12 +15,12 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-6 col-md-12 profilna my-auto">
-                    <h2 class="text-center mb-3">Creation starts here</h2>
+                    <h2 class="text-center mb-3 text-uppercase">Creation starts here</h2>
                    
                 </div>
                 <div class="col-xl-6 col-md-12 my-auto zaVeceEkrane">
                     <div class="row">
-                        <div class="col-lg-10 mx-auto">
+                        <div class="col-lg-8 mx-auto">
                             <h1 class="text-center mb-4 text-uppercase">Join our team</h1>
                             <p class="text-center mb-3 mb-md-5">Already have an account? <a href="login.php">Login</a></p>
                             <form action="phpFunctionality/register.php" method="POST" onSubmit="return provera();" id="kontaktForma">
