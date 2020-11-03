@@ -1,5 +1,7 @@
 # First PHP website
-Project for PHP1 @ ICT College <br/>
+Project for PHP1 course @ ICT College
+<br/>
+Blog Website with register/login with admin dashboard and commenting posts
 <b>Date</b> : april 2020
 ## Technologies used
 * HTML
