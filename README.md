@@ -1,6 +1,6 @@
 # First PHP website
 Project for PHP1 @ ICT College <br/>
-<b>Date : april 2020
+<b>Date</b> : april 2020
 ## Technologies used
 * HTML
 * CSS
